@@ -1,0 +1,21 @@
+<br>
+<div class="container">
+<h1>Todo</h1><br>
+<div class="row">
+  <div class="col">
+    <h5>Liste des Todo:</h5>
+    <ol class="list-group">
+      <div *ngFor="let todo of item; let i = index;" >
+        <div class="nom">{{todo.nom}}</div>
+        <div class="content">{{todo.content}}</div>
+        <button class="btn btn-primary" (click)="deleteTodo(i)">Supprimer</button>
+      </div>
+    </ol>
+  </div>
+  <div class="col">
+    Nom: <input type="text" class="inputNom" [(ngModel)]="inputNom">
+    Content: <input type="text" class="inputContent" [(ngModel)]="inputContent"><br><br>
+    <button class="btn btn-danger" (click)="ajouteTodo()">Ajouter</button>
+  </div>
+</div>
+</div>

@@ -1,0 +1,28 @@
+h1{
+  text-align: center;
+  font-family: fantasy;
+  color: darkred;
+}
+h5{
+  color: blue;
+}
+.nom{
+  display: inline-block;
+  width: 25%;
+}
+.content{
+  display: inline-block;
+  width: 50%;
+}
+.btn-primary{
+  display: inline-block;
+}
+.inputNom{
+  width: 100%;
+}
+.inputContent{
+  width: 100%;
+}
+.btn-danger{
+  float: right;
+}
